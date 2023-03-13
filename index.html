@@ -34,12 +34,70 @@
                 </ul>
             </address>
             <div class="header-container-mobile">
-                <button type="button" class="btn_burger">
+                <button type="button" class="btn_burger js-open-menu">
                     <svg class="burger" width="32" height="22">
                         <use href="./images/burger-icon.svg#icon-closeicons8-menu">
                         </use>
                     </svg>
                 </button>
+            </div>
+        </div>
+        <div class="mobile-menu js-menu-container">
+            <button type="button" class="mobile-menu-btn js-close-menu">
+                <svg class="mobile_window_close" width="8" height="8">
+                    <use href="./images/icon-close.svg#icon-closeclose-black-18dp">
+                    </use>
+                </svg>
+            </button>
+
+            <nav class="nav-mobile">
+                <ul class="menu_nav-mobile">
+                    <li><a class="studio_nav_nav-mobile current" href="./index.html">Studio</a></li>
+                    <li><a class="portfolio_nav_nav-mobile" href="./portfolio.html">Portfolio</a></li>
+                    <li><a class="contacts_nav_nav-mobile" href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            <address class="address">
+                <ul class="contact_date_nav-mobile">
+                    <li><a class="tel_nav-mobile" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    <li class="email_nav_li"><a class="email_nav-mobile" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                </ul>
+            </address>
+            <div class="mobile_item_block">
+                <ul class="mobile_item_block_ul">
+                    <li>
+                        <a class="mobile_socials_link" href="#">
+                            <svg class="mobile_svg_item" width="16" height="16">
+                                <use href="./images/socials.svg#icon-socialsinstagram">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="mobile_socials_link" href="#">
+                            <svg class="mobile_svg_item" width="16" height="16">
+                                <use href="./images/socials.svg#icon-socialstwitter">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="mobile_socials_link" href="#">
+                            <svg class="mobile_svg_item" width="16" height="16">
+                                <use href="./images/socials.svg#icon-socialsfacebook">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="mobile_socials_link" href="#">
+                            <svg class="mobile_svg_item" width="16" height="16">
+                                <use href="./images/socials.svg#icon-socialslinkedin">
+                                </use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -112,7 +170,7 @@
                             <img src="./images/mobile.jpg" alt="mobile" width="360" height="300">
                         </li>
                         <li class="box_img">
-                                <img src="./images/pc_mobile.jpg" alt="pc_mobile" width="360" height="300">
+                            <img src="./images/pc_mobile.jpg" alt="pc_mobile" width="360" height="300">
                         </li>
                     </ul>
                 </div>
@@ -497,6 +555,7 @@
             </form>
         </div>
     </div>
+    <script src="./js/mobile_menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
