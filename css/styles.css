@@ -355,6 +355,16 @@ ul {
     background-repeat: no-repeat;
     background-size: 1440px;
 }
+@media (min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero_image{
+        background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url('../images/people-office@x2.jpg');
+    }
+}
 .conteiner_hero {
     margin: auto;
     width: 100%;
