@@ -219,8 +219,8 @@ header {
 .tel_nav-mobile {
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 35px;
+    font-size: 30px;
+    line-height: 40px;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--hover-link);
@@ -1138,6 +1138,15 @@ img {
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 768px) {
+    .modal_window {
+        width: 408px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
 }
 .style_button {
     position: absolute;
