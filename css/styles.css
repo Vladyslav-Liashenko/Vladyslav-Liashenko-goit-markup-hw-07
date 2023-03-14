@@ -1010,7 +1010,7 @@ img {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 16px;
     width: 100%;
 }
 @media screen and (min-width: 768px){
@@ -1019,6 +1019,7 @@ img {
     }
     .customers_logo {
         width: 553px;
+        gap: 72px 24px;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -1031,6 +1032,7 @@ img {
     .customers_logo{
         flex-wrap: nowrap;
         width: 1160px;
+        gap: 0px 24px;
     }
 }
 
