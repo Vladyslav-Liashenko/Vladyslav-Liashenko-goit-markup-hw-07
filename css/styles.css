@@ -220,7 +220,7 @@ header {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 40px;
+    line-height: 35px;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--hover-link);
@@ -401,7 +401,7 @@ ul {
 }
 .conteiner_section1 {
     margin: auto;
-    width: 396px;
+    width: 100%;
 }
 @media (min-width: 768px) {
     .conteiner_section1 {
@@ -432,7 +432,7 @@ ul {
 }
 .section_m {
     margin: auto;
-    width: 396px;
+    width: 100%;
 }
 @media (min-width: 768px) {
     .section_m {
