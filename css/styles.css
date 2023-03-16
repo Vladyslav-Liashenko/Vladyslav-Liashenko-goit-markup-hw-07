@@ -125,6 +125,7 @@ header {
     cursor: pointer;
 }
 .burger {
+    stroke: #2E2F42;
     fill: var(--background-color);
     transition: fill var(--transition);
 }
@@ -135,7 +136,6 @@ header {
 /* mobile menu */
 .mobile-menu {
     overflow: scroll;
-    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -144,7 +144,6 @@ header {
     width: 100%;
     height: 100%;
     max-width: 768px;
-    max-height: 796px;
     top: 0;
     bottom: 0;
     right: 0;
@@ -153,6 +152,7 @@ header {
     transition: var(--transition);
 }
 .mobile-menu.is-open {
+    position: fixed;
     transform: translateY(0%);  
 }
 .mobile-menu-btn{
@@ -455,7 +455,7 @@ ul {
 }
 /*  */
 .section1 {
-    padding: 96px 16px;
+    padding: 96px 0px;
 }
 @media (min-width: 1200px) {
     .section1 {
@@ -463,12 +463,13 @@ ul {
     }
 }
 .conteiner_section1 {
+    padding: 0px 16px;
     margin: auto;
     width: 100%;
 }
 @media (min-width: 768px) {
     .conteiner_section1 {
-        width: 736px;
+        width: 768px;
     }
     .hero_h1 {
         font-size: 56px;
@@ -534,7 +535,6 @@ ul {
     display: flex;
     justify-content: center;
     margin: 0px;
-    margin-top: 72px;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -545,10 +545,20 @@ ul {
     order: 0;
     flex-grow: 0;
 }
+.section1_h3_punc, 
+.section1_dil,
+.section1_tex{
+  margin-top: 72px;  
+}
 @media (min-width: 768px) {
     .section1_h3 {
         justify-content: start;
         margin: 0px;
+        }
+        .section1_h3_punc,
+        .section1_dil,
+        .section1_tex {
+            margin-top: 0px;
         }
 }
 
@@ -845,7 +855,9 @@ ul {
     fill: var(--background-light-color);
     transition: fill var(--transition);
 }
-
+.email_name {
+    display: none;
+}
 .footer_svg_item:hover,
 .footer_svg_item:focus {
     fill: var(--background-light-color);
@@ -855,6 +867,7 @@ ul {
     margin-top: 72px;
 }
 .input_mail_foot {
+    max-width: 398px;
     width: 100%;
     height: 40px;
     padding: 8px 8px 8px 16px;
@@ -866,7 +879,6 @@ ul {
     transition: border var(--transition);
 }
 .footter_email_button {
-    margin-top: 16px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -876,7 +888,7 @@ ul {
     .footer_form_subscribe {
     }
     .input_mail_foot {
-        width: 264px;
+        max-width: 264px;
     }
     .footter_email_button {
         flex-wrap: nowrap;
@@ -1080,7 +1092,7 @@ img {
     padding: 0px;
 }
 .customers_logo {
-    max-width: 352px;
+    max-width: 398px;
     margin: auto;
     margin-top: 72px;
     justify-content: center;
