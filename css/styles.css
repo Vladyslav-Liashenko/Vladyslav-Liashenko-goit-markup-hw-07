@@ -1056,7 +1056,7 @@ img {
     display: block;
 }
 .all_img {
-    margin-top: 72px;
+    margin: 72px auto;
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
@@ -1065,11 +1065,13 @@ img {
 @media (min-width: 768px) {
     .all_img {
         gap: 72px 24px;
+        max-width: 768px;
     }
 }
 @media (min-width: 1200px){
 .all_img {
     gap: 48px 24px;
+    max-width:1160px;
 }
 }
 .block_img:hover,
