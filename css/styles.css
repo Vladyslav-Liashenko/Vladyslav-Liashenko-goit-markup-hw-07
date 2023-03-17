@@ -111,6 +111,7 @@ header {
 }
 .header-container-mobile {
     margin-left: auto;
+    max-height: 22px;
 }
 @media screen and (min-width: 768px) {
     .header-container-mobile {
@@ -123,9 +124,12 @@ header {
     }
 }
 .btn_burger {
+    padding: 0px;
     background: none;
     border: none;
     cursor: pointer;
+    width: 32px;
+    height: 22px;
 }
 .burger {
     stroke: #2E2F42;
@@ -758,6 +762,7 @@ ul {
         width: 496px;
         gap: 0px 24px;
         flex-direction: row;
+        align-items: flex-start;
     }
     .footer_webstudio{
         display: block; 
@@ -896,6 +901,7 @@ ul {
     .footter_email_button {
         flex-wrap: nowrap;
         gap: 0px;
+        margin-top: 16px;
     }
 }
 @media (min-width: 1200px) {
