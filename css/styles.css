@@ -324,7 +324,20 @@ header {
     border-radius: 2px;
     position: absolute;
     bottom: 0;
-    top: 44px;
+}
+@media screen and (min-width: 768px) {
+    .studio_nav.current::after,
+    .portfolio_nav.current::after,
+    .contacts_nav.current::after {
+        top: 56px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .studio_nav.current::after,
+    .portfolio_nav.current::after,
+    .contacts_nav.current::after {
+        top: 44px;
+    }
 }
 li {
     list-style-type: none;
@@ -359,9 +372,7 @@ ul {
 .hero_image {
     margin: auto;
     padding: 112px 0px;
-    max-width: 428px;
     width: 100%;
-    max-height: 432px;
     height: 100%;
     background-image: 
     linear-gradient(rgba(46, 47, 66, 0.7),
@@ -381,12 +392,33 @@ ul {
         url('../images/people-office@x2.jpg');
     }
 }
+
+@media (min-width: 428px) and (max-width: 767px) {
+    .hero_image {
+        background: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        background-position: center;
+        min-width: 429px;
+        max-width: 767px;
+    }
+}
+
+@media (min-width: 428px) and (max-width: 767px) and (min-device-pixel-ratio: 2),
+(min-width: 428px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+(min-width: 428px) and (max-width: 767px) and (min-resolution: 192dpi),
+(min-width: 428px) and (max-width: 767px) and (min-resolution: 2dppx) {
+    .hero_image {
+        background: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office@x2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
 @media (min-width: 768px) and (max-width: 1199px) {
     .hero_image {
         background: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
         background-position: center;
+        min-width: 769px;
         max-width: 1199px;
-        max-height: 436px;
         padding-top: 112px;
         padding-bottom: 108px;
     }
@@ -407,8 +439,8 @@ ul {
     .hero_image {
         background: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
         background-size: cover;
+        min-width: 1201px;
         max-width: 1440px;
-        max-height: 600px;
         padding-top: 188px;
         padding-bottom: 188px;
     }
